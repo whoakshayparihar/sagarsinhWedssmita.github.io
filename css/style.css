@@ -2132,6 +2132,15 @@ form label {
 .clsCeremony {
     height: 950px !important;
 }
+.myfooter{
+/* position: fixed; */
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #efeae2;
+   color: black;
+   text-align: center;
+}
 
 
 /*# sourceMappingURL=style.css.map */
