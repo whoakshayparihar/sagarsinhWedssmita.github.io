@@ -1,5 +1,4 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -27,13 +26,14 @@
     <meta name="twitter:image" content="images/s8.jpeg" />
     <meta name="twitter:url" content="" />
     <meta name="twitter:card" content="" />
-    
-    
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet'
+        type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
-    
+
 
     <!-- Animate.css -->
     <link rel="stylesheet" href="css/animate.css">
@@ -60,101 +60,131 @@
 	<![endif]-->
 
     <style>
-
-        .direction{
+        .direction {
             border: 0;
-    height: 500px;
-    width: 350px;
-    border-radius: 60px !important;
+            height: 500px;
+            width: 350px;
+            border-radius: 60px !important;
         }
-        body {font-family: Arial, Helvetica, sans-serif;}
-        
-        #myImg, #myImg1, #myImg2, #myImg3 {
-          border-radius: 5px;
-          cursor: pointer;
-          transition: 0.3s;
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
         }
-        
-        #myImg:hover, #myImg1:hover, #myImg2:hover, #myImg3:hover {opacity: 0.7;}
-        
+
+        #myImg,
+        #myImg1,
+        #myImg2,
+        #myImg3 {
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        #myImg:hover,
+        #myImg1:hover,
+        #myImg2:hover,
+        #myImg3:hover {
+            opacity: 0.7;
+        }
+
         /* The Modal (background) */
         .modal {
-          display: none; /* Hidden by default */
-          position: fixed; /* Stay in place */
-          z-index: 1; /* Sit on top */
-          padding-top: 100px; /* Location of the box */
-          left: 0;
-          top: 0;
-          width: 100%; /* Full width */
-          height: 100%; /* Full height */
-          overflow: auto; /* Enable scroll if needed */
-          background-color: rgb(0,0,0); /* Fallback color */
-          background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.9);
+            /* Black w/ opacity */
         }
-        
+
         /* Modal Content (image) */
         .modal-content {
-          margin: auto;
-          display: block;
-          width: 80%;
-          max-width: 700px;
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
         }
-        
+
         /* Caption of Modal Image */
         #caption {
-          margin: auto;
-          display: block;
-          width: 80%;
-          max-width: 700px;
-          text-align: center;
-          color: #ccc;
-          padding: 10px 0;
-          height: 150px;
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+            color: #ccc;
+            padding: 10px 0;
+            height: 150px;
         }
-        
+
         /* Add Animation */
-        .modal-content, #caption {  
-          -webkit-animation-name: zoom;
-          -webkit-animation-duration: 0.6s;
-          animation-name: zoom;
-          animation-duration: 0.6s;
+        .modal-content,
+        #caption {
+            -webkit-animation-name: zoom;
+            -webkit-animation-duration: 0.6s;
+            animation-name: zoom;
+            animation-duration: 0.6s;
         }
-        
+
         @-webkit-keyframes zoom {
-          from {-webkit-transform:scale(0)} 
-          to {-webkit-transform:scale(1)}
+            from {
+                -webkit-transform: scale(0)
+            }
+
+            to {
+                -webkit-transform: scale(1)
+            }
         }
-        
+
         @keyframes zoom {
-          from {transform:scale(0)} 
-          to {transform:scale(1)}
+            from {
+                transform: scale(0)
+            }
+
+            to {
+                transform: scale(1)
+            }
         }
-        
+
         /* The Close Button */
         .close {
-          position: absolute;
-          top: 15px;
-          right: 35px;
-          color: #f1f1f1;
-          font-size: 40px;
-          font-weight: bold;
-          transition: 0.3s;
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
         }
-        
+
         .close:hover,
         .close:focus {
-          color: #bbb;
-          text-decoration: none;
-          cursor: pointer;
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
         }
-        
+
         /* 100% Image Width on Smaller Screens */
-        @media only screen and (max-width: 700px){
-          .modal-content {
-            width: 100%;
-          }
+        @media only screen and (max-width: 700px) {
+            .modal-content {
+                width: 100%;
+            }
         }
-        </style>
+    </style>
 </head>
 
 <body>
@@ -169,11 +199,13 @@
                     <div class="col-md-12" style="text-align: center;">
                         <div id="fh5co-logo"><a>Wedding at Parihar Family<strong>.</strong></a></div>
                         <!-- <div id="fh5co-logo"><a href="DevangWedsKinjal.html"><strong></strong></a></div> -->
-                        
-                            <p style="color: white;padding-top: 95px">
-                                <img src="images/23.png" alt="groom" class="img-responsive" style="height: 60px;display: initial;"><br/>
-                                वक्रतुंड महाकाय सूर्यकोटि समप्रभा !<br>
-                                निर्विघ्नम कुरु मे देव सर्वकार्येषु सर्वदा !!</p>
+
+                        <p style="color: white;padding-top: 95px">
+                            <img src="images/23.png" alt="groom" class="img-responsive"
+                                style="height: 60px;display: initial;"><br />
+                            वक्रतुंड महाकाय सूर्यकोटि समप्रभा !<br>
+                            निर्विघ्नम कुरु मे देव सर्वकार्येषु सर्वदा !!
+                        </p>
                     </div>
 
                 </div>
@@ -207,11 +239,13 @@
                         <h3>17th April, 2022 Surat,Gujar`at</h3>
                         <p>We invited you to celebrate our wedding</p>
                         <h3><i class="fa fa-phone"></i> Contact Detail</h3>
-                        <p class="text-center"> Dipaksinh R. Parihar : <a href="tel:7405022262">7405022262</a>&nbsp;<a target="_blank" href="https://wa.me/+7405022262" class="default-btn">
-                            <i class="fa fa-whatsapp"></i>
+                        <p class="text-center"> Dipaksinh R. Parihar : <a href="tel:7405022262">7405022262</a>&nbsp;<a
+                                target="_blank" href="https://wa.me/+7405022262" class="default-btn">
+                                <i class="fa fa-whatsapp"></i>
                             </a></p>
-                        <p class="text-center"> Sagarsinh N. Parihar : <a href="tel:9104144414">9104144414</a>&nbsp;<a target="_blank" href="https://wa.me/+9104144414" class="default-btn">
-                            <i class="fa fa-whatsapp"></i>
+                        <p class="text-center"> Sagarsinh N. Parihar : <a href="tel:9104144414">9104144414</a>&nbsp;<a
+                                target="_blank" href="https://wa.me/+9104144414" class="default-btn">
+                                <i class="fa fa-whatsapp"></i>
                             </a></p>
                     </div>
                 </div>
@@ -252,7 +286,8 @@
                             <div class="col-md-12">
                                 <div class="col-md-4 col-sm-4 text-center">
                                     <div class="event-wrap animate-box">
-                                        <h3><img src="images/16.png" alt="error" style="height: 30px;width: 30px;"> Ganesh Pooja</h3>
+                                        <h3><img src="images/16.png" alt="error" style="height: 30px;width: 30px;">
+                                            Ganesh Pooja</h3>
                                         <div class="event-col">
                                             <i class="fa fa-clock-o"></i>
                                             <span>09:00 AM</span>
@@ -274,12 +309,14 @@
                                             <span>April, 2022</span>
                                         </div>
                                         <p style="font-weight: bold;"><i class="fa fa-map-marker"></i> Venue</p>
-                                        <p>85, Visvnagar Soc, Ganesh pura, Opp 99 shopping mall, Sayan road, Amroli, Surat. Gujarat-394107</p>
+                                        <p>85, Visvnagar Soc, Ganesh pura, Opp 99 shopping mall, Sayan road, Amroli,
+                                            Surat. Gujarat-394107</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-sm-4 text-center">
                                     <div class="event-wrap animate-box">
-                                        <h3><img src="images/17.png" alt="error" style="height: 30px;width: 30px;"> DJ & Raasgarba</h3>
+                                        <h3><img src="images/17.png" alt="error" style="height: 30px;width: 30px;"> DJ &
+                                            Raasgarba</h3>
                                         <div class="event-col">
                                             <i class="fa fa-clock-o"></i>
                                             <span>08:00 PM</span>
@@ -289,7 +326,8 @@
                                             <span>Friday 15</span>
                                             <span>April, 2022</span>
                                         </div>
-                                        <h3><img src="images/23.png" alt="error" style="height: 30px;width: 30px;"> Grahashanti</h3>
+                                        <h3><img src="images/23.png" alt="error" style="height: 30px;width: 30px;">
+                                            Grahashanti</h3>
                                         <div class="event-col">
                                             <i class="fa fa-clock-o"></i>
                                             <span>09:30 AM</span>
@@ -314,7 +352,8 @@
                                 </div>
                                 <div class="col-md-4 col-sm-4 text-center">
                                     <div class="event-wrap animate-box">
-                                        <h3><img src="images/20.png" alt="error" style="height: 30px;width: 30px;"> marriage</h3>
+                                        <h3><img src="images/20.png" alt="error" style="height: 30px;width: 30px;">
+                                            marriage</h3>
                                         <div class="event-col">
                                             <i class="fa fa-clock-o"></i>
                                             <span>10:00 PM</span>
@@ -325,9 +364,11 @@
                                             <span>Sunday 17</span>
                                             <span>April, 2022</span>
                                         </div>
-                                        <p style="font-weight: bold;"><i class="fa fa-map-marker"></i> Venu - Seoni-Malwa (MP)</p>
+                                        <p style="font-weight: bold;"><i class="fa fa-map-marker"></i> Venu -
+                                            Seoni-Malwa (MP)</p>
                                         <!-- <p></p> -->
-                                        <h3><img src="images/18.png" alt="error" style="height: 30px;width: 30px;"> Reception</h3>
+                                        <h3><img src="images/18.png" alt="error" style="height: 30px;width: 30px;">
+                                            Reception</h3>
                                         <div class="event-col">
                                             <i class="fa fa-clock-o"></i>
                                             <span>06:30 PM</span>
@@ -340,7 +381,7 @@
                                         </div>
                                         <p style="font-weight: bold;"><i class="fa fa-map-marker"></i> Venue</p>
                                         <p>Raj rajeshwar, Mahadev mandir, G.H.board, Amroli, Surat. Gujarat-394107</p>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -366,10 +407,12 @@
                                 <div class="timeline-panel">
                                     <div class="timeline-heading">
                                         <h3 class="timeline-title">First We Meet</h3>
-                                    <span class="date">September 24, 2021</span>
+                                        <span class="date">September 24, 2021</span>
                                     </div>
                                     <div class="timeline-body">
-                                        <p>I still remember the first time we met, i was so nervous. Your picture deep down in my heart I had kept. My eyes were immediately mesmerized by your angel like beauty. I fell in love with you the very first time
+                                        <p>I still remember the first time we met, i was so nervous. Your picture deep
+                                            down in my heart I had kept. My eyes were immediately mesmerized by your
+                                            angel like beauty. I fell in love with you the very first time
                                             we met.
                                         </p>
                                     </div>
@@ -380,10 +423,11 @@
                                 <div class="timeline-panel">
                                     <div class="timeline-heading">
                                         <h3 class="timeline-title">Engagement</h3>
-                                    <span class="date">December 08, 2021</span>
+                                        <span class="date">December 08, 2021</span>
                                     </div>
                                     <div class="timeline-body">
-                                        <p>Finally the day came when I confessed all that i felt about you, And when you said, you felt the same way it felt completely out of this World</p>
+                                        <p>Finally the day came when I confessed all that i felt about you, And when you
+                                            said, you felt the same way it felt completely out of this World</p>
                                     </div>
                                 </div>
                             </li>
@@ -395,7 +439,8 @@
                                         <span class="date">April 17, 2022</span>
                                     </div>
                                     <div class="timeline-body">
-                                        <p>Now the day has coming when you are finally mine, I don't ever want to lose you, I always want to be with you, without you I would be lost.</p>
+                                        <p>Now the day has coming when you are finally mine, I don't ever want to lose
+                                            you, I always want to be with you, without you I would be lost.</p>
                                     </div>
                                 </div>
                             </li>
@@ -403,9 +448,9 @@
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
 
-        
+
         <div id="fh5co-gallery" class="fh5co-section-gray">
             <div class="container">
                 <div class="row">
@@ -417,36 +462,18 @@
                 <div class="row row-bottom-padded-md">
                     <div class="col-md-12">
                         <ul id="fh5co-gallery-list">
-                            
-                            <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/s12.jpeg); ">
 
+                            <li class="one-third animate-box" data-animate-effect="fadeIn"
+                                style="background-image: url(images/s12.jpeg); ">
                             </li>
-                            <li class="one-third animate-box" value="images/11.JPEG" id="myImg" data-animate-effect="fadeIn" style="background-image: url(images/s11.jpeg); ">
-
+                            <li class="one-third animate-box" value="images/11.JPEG" id="myImg"
+                                data-animate-effect="fadeIn" style="background-image: url(images/s11.jpeg); ">
                             </li>
-                            <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/s13.jpeg); ">
+                            <li class="one-third animate-box" data-animate-effect="fadeIn"
+                                style="background-image: url(images/s13.jpeg); ">
                             </li>
-                            <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/s14.jpeg); ">
-
-                            </li>
-                            <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/w1.JPG); ">
-
-                            </li>
-
-                            <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/g4.JPG); ">
-
-                            </li>
-
-
-                            <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/MAX-022.jpg); ">
-
-                            </li>
-
-                            <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/MAX-020.jpg); ">
-
-                            </li>
-                            <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/MAX-005.jpg); ">
-
+                            <li class="one-third animate-box" data-animate-effect="fadeIn"
+                                style="background-image: url(images/s14.jpeg); ">
                             </li>
                         </ul>
                     </div>
@@ -461,18 +488,24 @@
         <div>
             <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
                 <h2><i class="fa fa-map-marker"></i> Get Our Direction!</h2>
-                <iframe class="direction" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.7583586890973!2d72.84793471493622!3d21.2414286358836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04ed612c5c043%3A0xe2942fba619445d1!2sVishwa%20Nagar%20Society%2C%20Bhagu%20Nagar-1%2C%20Amroli%2C%20Surat%2C%20Gujarat%20394107!5e0!3m2!1sen!2sin!4v1642926048902!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe class="direction"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.7583586890973!2d72.84793471493622!3d21.2414286358836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04ed612c5c043%3A0xe2942fba619445d1!2sVishwa%20Nagar%20Society%2C%20Bhagu%20Nagar-1%2C%20Amroli%2C%20Surat%2C%20Gujarat%20394107!5e0!3m2!1sen!2sin!4v1642926048902!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
             <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-                <p><b><img src="images/26.png" alt="error" style="height: 30px;width: 30px;">"मिलन है दो परिवारों का रस्म है खुशी मनाने
-                    का हमें तो इंतजार है बस आपके आने का "<img src="images/26.png" alt="error" style="height: 30px;width: 30px;"></b></p>
+                <p><b><img src="images/26.png" alt="error" style="height: 30px;width: 30px;">"मिलन है दो परिवारों का
+                        रस्म है खुशी मनाने
+                        का हमें तो इंतजार है बस आपके आने का "<img src="images/26.png" alt="error"
+                            style="height: 30px;width: 30px;"></b></p>
                 <h2><i class="fa fa-envelope-o"></i> Note</h2>
-                <p style="text-align: center;">According to guidelines of covid-19,please wear a mask and following the social distance.</p>
-            <p style="text-align: center;">कोविड-19 के दिशा-निर्देशों के अनुसार, कृपया मास्क पहनें और सामाजिक दूरी का पालन करें।.</p>
-            </div>  
+                <p style="text-align: center;">According to guidelines of covid-19,please wear a mask and following the
+                    social distance.</p>
+                <p style="text-align: center;">कोविड-19 के दिशा-निर्देशों के अनुसार, कृपया मास्क पहनें और सामाजिक दूरी
+                    का पालन करें।.</p>
+            </div>
         </div>
         <div>
-            
+
         </div>
 
     </div>
@@ -528,71 +561,71 @@
 
         var modal = document.getElementById("myModal");
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-function imgclick(id){
-    // var img = document.getElementById("myImg");
-    // var modalImg = document.getElementById("img01");
-    // var captionText = document.getElementById("caption");
-    var img = id;
-    var modalImg = document.getElementById("img01");
-    var captionText = document.getElementById("caption");
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        function imgclick(id) {
+            // var img = document.getElementById("myImg");
+            // var modalImg = document.getElementById("img01");
+            // var captionText = document.getElementById("caption");
+            var img = id;
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
 
-    modal.style.display = "block";
-    modalImg.src = id;
-    // captionText.innerHTML = this.alt;
-}
+            modal.style.display = "block";
+            modalImg.src = id;
+            // captionText.innerHTML = this.alt;
+        }
 
-// img.onclick = function(){
-//   modal.style.display = "block";
-//   modalImg.src = this.src;
-//   captionText.innerHTML = this.alt;
-// }
+        // img.onclick = function(){
+        //   modal.style.display = "block";
+        //   modalImg.src = this.src;
+        //   captionText.innerHTML = this.alt;
+        // }
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
-}
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
 
     </script>
-<script>
-    var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?27184';
-    var s = document.createElement('script');
-    s.type = 'text/javascript';
-    s.async = true;
-    s.src = url;
-    var options = {
-  "enabled":true,
-  "chatButtonSetting":{
-      "backgroundColor":"#4dc247",
-      "ctaText":"",
-      "borderRadius":"25",
-      "marginLeft":"0",
-      "marginBottom":"50",
-      "marginRight":"50",
-      "position":"right"
-  },
-  "brandSetting":{
-      "brandName":"Sagarsinh Parihar",
-      "brandSubTitle":"Available",
-      "brandImg":"images/s2.jpeg",
-      "welcomeText":"Hi there!\nHow can I help you?",
-      "messageText":"Hello, I have a question about {{page_link}}",
-      "backgroundColor":"#0a5f54",
-      "ctaText":"Start Chat",
-      "borderRadius":"25",
-      "autoShow":false,
-      "phoneNumber":"+91 9104144414"
-  }
-};
-    s.onload = function() {
-        CreateWhatsappChatWidget(options);
-    };
-    var x = document.getElementsByTagName('script')[0];
-    x.parentNode.insertBefore(s, x);
-</script>
+    <script>
+        var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?27184';
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = url;
+        var options = {
+            "enabled": true,
+            "chatButtonSetting": {
+                "backgroundColor": "#4dc247",
+                "ctaText": "",
+                "borderRadius": "25",
+                "marginLeft": "0",
+                "marginBottom": "50",
+                "marginRight": "50",
+                "position": "right"
+            },
+            "brandSetting": {
+                "brandName": "Sagarsinh Parihar",
+                "brandSubTitle": "Available",
+                "brandImg": "images/s2.jpeg",
+                "welcomeText": "Hi there!\nHow can I help you?",
+                "messageText": "Hello, I have a question about {{page_link}}",
+                "backgroundColor": "#0a5f54",
+                "ctaText": "Start Chat",
+                "borderRadius": "25",
+                "autoShow": false,
+                "phoneNumber": "+91 9104144414"
+            }
+        };
+        s.onload = function () {
+            CreateWhatsappChatWidget(options);
+        };
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+    </script>
 </body>
 
 </html>
